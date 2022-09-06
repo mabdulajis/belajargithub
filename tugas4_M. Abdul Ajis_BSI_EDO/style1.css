@@ -1,0 +1,57 @@
+body{
+    background: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 1em;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+h3, p{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+marquee{
+    color: red;
+    font-size: 2rem;
+}
+
+fieldset{
+    background-image: url(WhatsApp\ Image\ 2022-06-09\ at\ 22.26.16.jpeg);
+    box-shadow: 2px, 2px, 10px black;
+    background-repeat: repeat-y;
+    border-radius: 15%;
+}
+
+b{
+    font-size: 2rem;
+}
+
+li, ul{
+    position: absolute;
+    /* list-style-image: url(emot.jpg); */
+    text-align: justify;
+}
+
+ol, li, ul{
+    position: relative;
+    /* padding-left: 3em; */
+    color: red;
+}
+
+ legend{
+    font-size: 5em;
+    color: red;
+ }

@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+/* Style the header */
+/* ---------------------grouping-------------------- */
+.header,
+img {
+  width: 96%;
+  height: 200px;
+  background-position: center center;
+  padding: 0px;
+  text-align: center;
+  margin: auto;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(214, 223, 226);
+  margin-left: 54px;
+  margin-right: 54px;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: blue;
+}
+
+/* Change color on hover */
+/* --------------------pseudo class------------------ */
+.topnav a:hover {
+  background-color: rgb(135, 186, 228);
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 0px;
+  margin-left: 54px;
+  margin-right: 54px;
+  height: 550px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 13%;
+  color: darkblue;
+}
+
+/* Middle column */
+.column.middle {
+  width: 49%;
+  text-align: justify;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; /*membersihkan float left sebelumnya*/
+}
+
+.row {
+  height: 350px;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side,
+  .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  padding: 0px;
+  text-align: right;
+  margin-left: 54px;
+  margin-right: 54px;
+}
+.footer img {
+  width: 40px;
+  height: 35px;
+}
+.footer table {
+  width: 100%;
+  text-align: left;
+  background-color: rgb(214, 223, 226);
+}
+.footer .maker {
+  width: 40%;
+}
+.ikon {
+  width: 30px;
+  height: 30px;
+}
+
+/* ---------------------pseudo element-------------------- */
+.p1:first-letter {
+  color: blue;
+  font-weight: bold;
+  font-size: 48pt;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  float: left;
+  padding-right: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#side1 {
+  width: 250px;
+  margin-top: 50px;
+}
